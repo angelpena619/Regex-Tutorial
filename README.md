@@ -1,9 +1,12 @@
-REGEX (Regular expressions) are used to find certain patterns of characters within a string. They are used to validate input, replace or change a character within a sequence. This is a regex for matching character information for valid email addressess.
+REGEX (Regular expressions) are utilized to find certain patterns of characters within a string. They are used to authenticicate input, change a character. This is a regex for matching character information for valid e-mail address.
 
 ## Summary
 
-This is the code snippet that we will be working with for this assignment. `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
-This code is a line of regex that will validate a whether or not an email address is input. This is the code that will be used for this breakdown and how this line of code works.
+Code snippet that we will be working with for this assignment:
+
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+above code is a line of REGEX that will validate that a email address is an input. This is the code that will be used for this and how this line of code works.
 
 ## Table of Contents
 
