@@ -1,6 +1,4 @@
-Email Matching Regex
-
-Regular expressions are used to find certain patterns of characters within a string. They are used to validate input, replace or change a character within a sequence. This is a regex for matching character information for valid email addressess.
+REGEX (Regular expressions) are used to find certain patterns of characters within a string. They are used to validate input, replace or change a character within a sequence. This is a regex for matching character information for valid email addressess.
 
 ## Summary
 
