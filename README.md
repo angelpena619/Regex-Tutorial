@@ -4,7 +4,7 @@ REGEX (Regular expressions) are utilized to find certain patterns of characters 
 
 Code snippet that we will be working with for this assignment:
 
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+## `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 above code is a line of REGEX that will validate that a email address is an input. This is the code that will be used for this and how this line of code works.
 
