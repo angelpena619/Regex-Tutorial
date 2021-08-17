@@ -1,4 +1,6 @@
-REGEX (Regular expressions) are utilized to find certain patterns of characters within a string. They are used to authenticicate input, change a character. This is a regex for matching character information for valid e-mail address.
+# REGEX 
+
+(Regular expressions) are utilized to find certain patterns of characters within a string. They are used to authenticicate input, change a character. This is a regex for matching character information for valid e-mail address.
 
 ## Summary
 
