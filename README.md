@@ -127,8 +127,3 @@ Positive:
 Negaitive:
  * A negative look-ahead, (?!ABC), will specify a group that cannot match after the pattern; otherwise, the result is unsuccessful.
  * A negative look-behind, (?<!ABC), will specify a group that cannot match before the pattern; otherwise, the result is unsuccessful.
-
-
-## Author
-
-Ryan Helm | My [GitHub](https://github.com/rjhelm)
