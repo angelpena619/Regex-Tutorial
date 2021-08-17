@@ -27,7 +27,7 @@ above code is a line of REGEX that will validate that a email address is an inpu
 ### Anchors
 Anchors are used to indentify position of characters, rather then indentify a specific character.
 
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+## `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 Anchors used in this regular expression are `^` at the beggining and `$` at the end. These contain the expression within them and are 
 often used in regular expressions. `$` is used here to end the line but can change depending on which engine is used or if we have multiline. 
@@ -36,7 +36,7 @@ often used in regular expressions. `$` is used here to end the line but can chan
 
 A quantifier is an operator that repeats. Quantifiers will tell the system to match a preceding token a set number of times. They are considered lazy or greedy.
 
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+## `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 The `+` quantifier is used to communicate another sequence to matched as a greedy quantifier, its going to attempt a match `[a-z0-9_\.-`. The quatifiers for this code is `+` and `{2, 6}`. `{2, 6}` will match two to six from the previous token and in our case it will match `[a-z\.]`.Example `{2}` would match exactly two, and `{2,}` would match two or more.
 
@@ -48,7 +48,7 @@ The pipe `|` is considered an alternation. It will match expressions that come b
 
 The character classes match one out of several characters. The order of the characters within the character class do not matter. 
 
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+## `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 A character set `[ABC]` will match any single character in the set. In this example `[a-z0-9_\.-]` will match any character within square brackets, a range `[A-Z]` will match a character included between two characters that have been seperated by a hyphen. In this example a-z will match any character between a-z. `0-9` will match any character between zero and nine. 
 
@@ -78,7 +78,7 @@ Some examples would be:
 
 A Group will allow groups of tokens to be combined. They are then operated on together. 
 
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+## `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 Capturing group `(ABC)` will make a group of multiple tokens that will be extracted as a substring. This code has three different capturing groups: `([a-z0-9_\.-]+)`, `([\da-z\.-]+)`, `([a-z\.]{2,6})`. The substring will be verified before the `@`, another before the `\`, and the last for the domain name that pertains to the email address.
 
@@ -86,7 +86,7 @@ Capturing group `(ABC)` will make a group of multiple tokens that will be extrac
 
 Bracket expressions for this code:
 
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+## `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 For this email validation it includes:
 `[a-z0-9_\.-]`, this is matching any letter a-z (case sensitive) 0-9, "_", "-", and ".' characters.
@@ -100,31 +100,8 @@ The lazy quantifier will try to match as few characters as it possibly can as it
 
 ### Boundaries
 
-No boundaries are used in this code
-
-A boundry is used in a regex by using `\b` this porompts for a check by the engine, it checks that the position in the string is a word boundary. 
+boundry is used in a regex by using `\b` this porompts for a check by the engine, it checks that the position in the string is a word boundary. 
 
 This can be at the start of the string, if the first string character is a word character `\w`
 Between two characters in the string, where one is a word character `\w` and the other is not.
 At string end, if the last string character is a word character `\w`.
-
-
-### Back-references
-
-Backreferences match the same text as previously matched within a capturing group. 
-
-This code does not have an example of this within it. 
-
-It is often used to match HTML tags between the opening and the closing tag.
-
-### Look-ahead and Look-behind
-
-Look-arounds match a group of characters before or after a pattern, they allow for this not to be returned in the result. Look-behinds are specific for a group that is before a pattern, look aheads are the groups after the pattern.
-
-This code does not contain any look-arounds but some examples would be:
-Positive:
- * A positive look-ahead, (?=ABC), will match a group after the pattern without including it in the result.
- * A positive look-behind, (?<=ABC), will match a group before the pattern without including it in the result.
-Negaitive:
- * A negative look-ahead, (?!ABC), will specify a group that cannot match after the pattern; otherwise, the result is unsuccessful.
- * A negative look-behind, (?<!ABC), will specify a group that cannot match before the pattern; otherwise, the result is unsuccessful.
